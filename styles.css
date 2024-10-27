@@ -1,0 +1,143 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #1e3c72 10%, #2a5298 100%);
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #f0f0f0;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+    text-align: center;
+    max-width: 400px;
+    width: 100%;
+    backdrop-filter: blur(10px);
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 1.5rem;
+}
+
+#city-input {
+    padding: 0.75rem;
+    font-size: 1rem;
+    border: none;
+    border-radius: 50px 0 0 50px;
+    width: 70%;
+    outline: none;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #ffffff;
+}
+
+#city-input::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+
+#search-btn {
+    padding: 0.75rem 1.5rem;
+    font-size: 1rem;
+    background-color: #4a69bb;
+    color: white;
+    border: none;
+    border-radius: 0 50px 50px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#search-btn:hover {
+    background-color: #3a539b;
+}
+
+.weather-header {
+    margin-bottom: 1rem;
+}
+
+#city-name {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+    color: #ffffff;
+}
+
+#date {
+    font-size: 1rem;
+    color: #cccccc;
+}
+
+.weather-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#weather-icon {
+    width: 80px;
+    height: 80px;
+    margin-right: 1rem;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
+}
+
+.temperature-container {
+    text-align: left;
+}
+
+#temperature {
+    font-size: 3rem;
+    font-weight: bold;
+    margin: 0;
+    color: #ffffff;
+}
+
+#feels-like {
+    font-size: 1rem;
+    color: #cccccc;
+    margin: 0;
+}
+
+#weather-description {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.weather-details {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1rem;
+}
+
+.detail {
+    display: flex;
+    align-items: center;
+    color: #cccccc;
+}
+
+.detail svg {
+    margin-right: 0.5rem;
+    stroke: #cccccc;
+}
+
+.hidden {
+    display: none;
+}
+
+#error-message {
+    color: #ff6b6b;
+    font-weight: bold;
+}

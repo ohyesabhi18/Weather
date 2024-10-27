@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Weather App</h1>
+            <div class="search-container">
+                <input type="text" id="city-input" placeholder="Enter city name">
+                <button id="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line></svg>
+                </button>
+            </div>
+            <div id="weather-container" class="hidden">
+                <div class="weather-header">
+                    <h2 id="city-name"></h2>
+                    <p id="date"></p>
+                </div>
+                <div class="weather-info">
+                    <img id="weather-icon" src="" alt="Weather Icon">
+                    <div class="temperature-container">
+                        <p id="temperature"></p>
+                        <p id="feels-like"></p>
+                    </div>
+                </div>
+                <p id="weather-description"></p>
+                <div class="weather-details">
+                    <div class="detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6m0 12v2M4.93 4.93l4.24 4.24m5.66 5.66l4.24 4.24M2 12h6m12 0h2M4.93 19.07l4.24-4.24m5.66-5.66l4.24-4.24"></path></svg>
+                        <p id="humidity"></p>
+                    </div>
+                    <div class="detail">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9.59 4.59A2 2 0 1 1 11 8H2m10.59 11.41A2 2 0 1 0 14 16H2m15.73-8.27A2.5 2.5 0 1 1 19.5 12H2"></path></svg>
+                        <p id="wind-speed"></p>
+                    </div>
+                </div>
+            </div>
+            <p id="error-message" class="hidden"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
